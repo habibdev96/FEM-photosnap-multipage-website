@@ -4,11 +4,11 @@ import logo from '../../assets/shared/desktop/logolight.svg';
 import { StyledLink, ArrowLink } from '../styledElements/Link.styled';
 import arrow from '../../assets/shared/desktop/arrowlight.svg';
 import Paragraph from '../styledElements/Paragraphs.styled';
-import { sectionSpacingSm } from '../../abstracts/Mixins';
+import Tag from './Tag';
 import { useGlobalContext } from '../../context/context';
 
 const StyledFooter = styled.footer`
-  ${sectionSpacingSm}
+  padding: 5rem 2rem 1rem 2rem;
   background-color: var(--black);
 
   .left {
@@ -89,6 +89,7 @@ const Footer = () => {
           <Paragraph light>Copyright 2021. All Rights Reserved.</Paragraph>
         </div>
       </FlexBetween>
+      <Tag />
     </StyledFooter>
   );
 };
