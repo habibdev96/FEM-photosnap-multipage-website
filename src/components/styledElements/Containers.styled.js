@@ -12,6 +12,7 @@ export const FlexBetween = styled.div`
 export const TwoCol = styled.div`
   display: grid;
   align-items: center;
-  grid-template-columns: 1fr 1.5fr;
+  grid-template-columns: ${({ invert }) =>
+    invert ? '2fr 1.5fr' : '1.5fr 2fr'};
   gap: var(--gap);
 `;

@@ -33,7 +33,7 @@ const HomeHero = () => {
             We make it easy to share photos, tell stories and connect with
             others.
           </Paragraph>
-          <ArrowLink light>
+          <ArrowLink light to='/Pricing'>
             <span>Get an invite</span>
             <img src={arrow} alt='' />
           </ArrowLink>
