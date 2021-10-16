@@ -6,8 +6,8 @@ export const StyledLink = styled(Link)`
   ${headingStyles}
   font-size: 1.5rem;
   text-transform: uppercase;
-  color: var(--black);
   transition: var(--mainTransition);
+  color: ${({ light }) => (light ? 'var(--white)' : 'var(--black)')};
 
   &:hover,
   &:focus {

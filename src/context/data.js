@@ -22,6 +22,12 @@ import featureIcon4 from '../assets/features/desktop/custom-domain.svg';
 import featureIcon5 from '../assets/features/desktop/boost-exposure.svg';
 import featureIcon6 from '../assets/features/desktop/drag-drop.svg';
 
+import socialIcon1 from '../assets/shared/desktop/facebook.svg';
+import socialIcon2 from '../assets/shared/desktop/youtube.svg';
+import socialIcon3 from '../assets/shared/desktop/twitter.svg';
+import socialIcon4 from '../assets/shared/desktop/pinterest.svg';
+import socialIcon5 from '../assets/shared/desktop/instagram.svg';
+
 export const linksData = [
   {
     id: 1,
@@ -219,4 +225,55 @@ export const featureCardsData = [
         'Easily drag and drop your image and get beautiful shots everytime. No over the top tooling to add friction to creating stories.',
     },
   ],
+];
+
+export const socialsData = [
+  {
+    id: 1,
+    icon: socialIcon1,
+    alt: 'facebook icon',
+  },
+  {
+    id: 2,
+    icon: socialIcon2,
+    alt: 'youtube icon',
+  },
+  {
+    id: 3,
+    icon: socialIcon3,
+    alt: 'twitter icon',
+  },
+  {
+    id: 4,
+    icon: socialIcon4,
+    alt: 'pinterest icon',
+  },
+  {
+    id: 5,
+    icon: socialIcon5,
+    alt: 'instagram icon',
+  },
+];
+
+export const footerLinksData = [
+  {
+    id: 1,
+    path: '/',
+    text: 'Home',
+  },
+  {
+    id: 2,
+    path: '/Stories',
+    text: 'Stories',
+  },
+  {
+    id: 3,
+    path: '/Features',
+    text: 'Features',
+  },
+  {
+    id: 4,
+    path: '/Pricing',
+    text: 'Pricing',
+  },
 ];

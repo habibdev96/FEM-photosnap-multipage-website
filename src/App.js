@@ -5,6 +5,7 @@ import Stories from './pages/Stories';
 import Features from './pages/Features';
 import Pricing from './pages/Pricing';
 import Navbar from './components/shared/Navbar';
+import Footer from './components/shared/Footer';
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
           <Route exact path='/Features' component={Features} />
           <Route exact path='/Pricing' component={Pricing} />
         </Switch>
+        <Footer />
       </Router>
     </>
   );
