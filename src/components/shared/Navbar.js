@@ -3,12 +3,10 @@ import { FlexBetween } from '../styledElements/Containers.styled';
 import logo from '../../assets/shared/desktop/logo.svg';
 import { StyledLink } from '../styledElements/Link.styled';
 import { Button } from '../styledElements/Buttons.styled';
-import { maxWidthLg } from '../../abstracts/Mixins';
 import { Link } from 'react-router-dom';
 import { useGlobalContext } from '../../context/context';
 
 const StyledNav = styled.nav`
-  ${maxWidthLg}
   padding: 2rem;
 
   .logo {

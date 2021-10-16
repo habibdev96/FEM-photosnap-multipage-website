@@ -2,7 +2,7 @@ import { css } from 'styled-components';
 
 const headingStyles = css`
   font-weight: 700;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.2rem;
   line-height: 1.2;
 `;
 
