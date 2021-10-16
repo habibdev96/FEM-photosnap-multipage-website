@@ -11,5 +11,5 @@ export const MainHeading = styled.h1`
 export const CardHeading = styled.h3`
   ${headingStyles}
   font-size: 1.8rem;
-  color: var(--white);
+  color: ${({ light }) => (light ? 'var(--white)' : 'var(--black)')};
 `;

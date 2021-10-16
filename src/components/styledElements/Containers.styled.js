@@ -17,6 +17,13 @@ export const TwoCol = styled.div`
   gap: var(--gap);
 `;
 
+export const ThreeCol = styled.div`
+  display: grid;
+  align-items: flex-start;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--gap);
+`;
+
 export const FourCol = styled.div`
   display: grid;
   align-items: center;

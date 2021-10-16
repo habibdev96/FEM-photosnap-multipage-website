@@ -62,7 +62,7 @@ const StoryCard = ({ date, title, author, bg }) => {
       >
         <div className='content'>
           <Paragraph card>{date}</Paragraph>
-          <CardHeading>{title}</CardHeading>
+          <CardHeading light>{title}</CardHeading>
           <Paragraph card>by {author}</Paragraph>
         </div>
         <ArrowLink light={+true} to='/Stories' className='link'>

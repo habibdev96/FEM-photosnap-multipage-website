@@ -15,6 +15,13 @@ import storyImage14 from '../assets/stories/desktop/dark-forest.jpg';
 import storyImage15 from '../assets/stories/desktop/somwarpet.jpg';
 import storyImage16 from '../assets/stories/desktop/land-of-dreams.jpg';
 
+import featureIcon1 from '../assets/features/desktop/responsive.svg';
+import featureIcon2 from '../assets/features/desktop/no-limit.svg';
+import featureIcon3 from '../assets/features/desktop/embed.svg';
+import featureIcon4 from '../assets/features/desktop/custom-domain.svg';
+import featureIcon5 from '../assets/features/desktop/boost-exposure.svg';
+import featureIcon6 from '../assets/features/desktop/drag-drop.svg';
+
 export const linksData = [
   {
     id: 1,
@@ -162,4 +169,54 @@ export const storiesData = [
     topStory: false,
     bg: storyImage16,
   },
+];
+
+export const featureCardsData = [
+  [
+    {
+      id: 1,
+      icon: featureIcon1,
+      title: '100% Responsive',
+      description:
+        'No matter which the device you’re on, our site is fully responsive and stories look beautiful on any screen.',
+    },
+    {
+      id: 2,
+      icon: featureIcon2,
+      title: 'No Photo Upload Limit',
+      description:
+        'Our tool has no limits on uploads or bandwidth. Freely upload in bulk and share all of your stories in one go.',
+    },
+    {
+      id: 3,
+      icon: featureIcon3,
+      title: 'Available to Embed',
+      description:
+        'Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube videos, Google Maps, and more.',
+    },
+  ],
+
+  [
+    {
+      id: 1,
+      icon: featureIcon4,
+      title: 'Custom Domain',
+      description:
+        'With Photosnap subscriptions you can host your stories on your own domain. You can also remove our branding!',
+    },
+    {
+      id: 2,
+      icon: featureIcon5,
+      title: 'Boost Your Exposure',
+      description:
+        'Users that viewed your story or gallery can easily get notifed of new and featured stories with our built in mailing list.',
+    },
+    {
+      id: 3,
+      icon: featureIcon6,
+      title: 'Drag & Drop Image',
+      description:
+        'Easily drag and drop your image and get beautiful shots everytime. No over the top tooling to add friction to creating stories.',
+    },
+  ],
 ];

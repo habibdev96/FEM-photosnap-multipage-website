@@ -4,6 +4,7 @@ import {
   HomeFeatureSectionTwo,
 } from '../components/home/HomeFeatureSections';
 import TopStories from '../components/home/TopStories';
+import HomeFeatureCards from '../components/home/HomeFeatureCards';
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
         <HomeFeatureSectionOne />
         <HomeFeatureSectionTwo />
         <TopStories />
+        <HomeFeatureCards />
       </main>
     </>
   );
