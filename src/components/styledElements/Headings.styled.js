@@ -7,3 +7,9 @@ export const MainHeading = styled.h1`
   text-transform: uppercase;
   color: ${({ light }) => (light ? 'var(--white)' : 'var(--black)')};
 `;
+
+export const CardHeading = styled.h3`
+  ${headingStyles}
+  font-size: 1.8rem;
+  color: var(--white);
+`;

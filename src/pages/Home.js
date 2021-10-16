@@ -3,6 +3,7 @@ import {
   HomeFeatureSectionOne,
   HomeFeatureSectionTwo,
 } from '../components/home/HomeFeatureSections';
+import TopStories from '../components/home/TopStories';
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <main>
         <HomeFeatureSectionOne />
         <HomeFeatureSectionTwo />
+        <TopStories />
       </main>
     </>
   );

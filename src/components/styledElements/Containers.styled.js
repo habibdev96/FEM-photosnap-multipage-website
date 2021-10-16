@@ -16,3 +16,9 @@ export const TwoCol = styled.div`
     invert ? '2fr 1.5fr' : '1.5fr 2fr'};
   gap: var(--gap);
 `;
+
+export const FourCol = styled.div`
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(4, 1fr);
+`;
