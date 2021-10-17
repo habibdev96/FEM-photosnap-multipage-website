@@ -36,7 +36,7 @@ const Tag = () => {
       <h3 className='heading'>
         project for{' '}
         <a
-          href='https://www.frontendmentor.io/challenges/myteam-multipage-website-mxlEauvW'
+          href='https://www.frontendmentor.io/challenges/photosnap-multipage-website-nMDSrNmNW'
           target='_blank'
           rel='noreferrer'
           className='link'

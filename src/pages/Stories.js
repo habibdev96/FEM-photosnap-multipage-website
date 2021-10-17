@@ -1,5 +1,11 @@
+import StoriesHero from '../components/stories/StoriesHero';
+
 const Stories = () => {
-  return <div>stories page</div>;
+  return (
+    <>
+      <StoriesHero />
+    </>
+  );
 };
 
 export default Stories;

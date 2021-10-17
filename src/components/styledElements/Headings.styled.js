@@ -13,3 +13,11 @@ export const CardHeading = styled.h3`
   font-size: 1.8rem;
   color: ${({ light }) => (light ? 'var(--white)' : 'var(--black)')};
 `;
+
+export const SubHeading = styled.h4`
+  ${headingStyles}
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  color: ${({ light }) => (light ? 'var(--white)' : 'var(--black)')};
+`;

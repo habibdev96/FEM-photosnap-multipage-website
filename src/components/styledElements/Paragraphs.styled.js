@@ -14,6 +14,8 @@ const Paragraph = styled.p`
       padding: 0;
       color: var(--white);
     `}
+
+  ${({ white }) => white && 'color: var(--white)'}
 `;
 
 export default Paragraph;

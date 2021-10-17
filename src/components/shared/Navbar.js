@@ -7,7 +7,11 @@ import { Link } from 'react-router-dom';
 import { useGlobalContext } from '../../context/context';
 
 const StyledNav = styled.nav`
+  position: fixed;
+  width: 100%;
   padding: 2rem;
+  z-index: 3000;
+  background: var(--white);
 
   .logo {
     width: 20rem;
