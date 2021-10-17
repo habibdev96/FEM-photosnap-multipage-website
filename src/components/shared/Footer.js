@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 import { FlexBetween } from '../styledElements/Containers.styled';
 import logo from '../../assets/shared/desktop/logolight.svg';
-import { StyledLink, ArrowLink } from '../styledElements/Link.styled';
-import arrow from '../../assets/shared/desktop/arrowlight.svg';
+import { StyledLink } from '../styledElements/Link.styled';
+import { ArrowLinkLight } from './ArrowLinks';
 import Paragraph from '../styledElements/Paragraphs.styled';
 import Tag from './Tag';
 import { useGlobalContext } from '../../context/context';
@@ -82,10 +82,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className='right'>
-          <ArrowLink light={+true} to='/Pricing'>
-            <span>Get an invite</span>
-            <img src={arrow} alt='' />
-          </ArrowLink>
+          <ArrowLinkLight text='Get an Invite' path='/Pricing' />
           <Paragraph light>Copyright 2021. All Rights Reserved.</Paragraph>
         </div>
       </FlexBetween>

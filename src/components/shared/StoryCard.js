@@ -1,8 +1,7 @@
 import styled from 'styled-components';
 import { CardHeading } from '../styledElements/Headings.styled';
 import Paragraph from '../styledElements/Paragraphs.styled';
-import { ArrowLink } from '../styledElements/Link.styled';
-import arrow from '../../assets/shared/desktop/arrowlight.svg';
+import { ArrowLinkLight } from './ArrowLinks';
 
 const StyledHyperlink = styled.a.attrs(() => ({
   href: '#!',
@@ -45,10 +44,7 @@ const StyledHyperlink = styled.a.attrs(() => ({
   .content {
     border-bottom: 0.1rem solid var(--lightGray);
     width: 100%;
-  }
-
-  .link {
-    margin: 2rem 0;
+    margin-bottom: 2rem;
   }
 `;
 
@@ -65,10 +61,7 @@ const StoryCard = ({ date, title, author, bg }) => {
           <CardHeading light>{title}</CardHeading>
           <Paragraph card>by {author}</Paragraph>
         </div>
-        <ArrowLink light={+true} to='/Stories' className='link'>
-          <span>Read Story</span>
-          <img src={arrow} alt='' />
-        </ArrowLink>
+        <ArrowLinkLight text='Read Story' path='/Stories' />
       </article>
     </StyledHyperlink>
   );

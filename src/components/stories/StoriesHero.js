@@ -4,8 +4,7 @@ import { maxWidthLg } from '../../abstracts/Mixins';
 import { TwoCol } from '../styledElements/Containers.styled';
 import { SubHeading, MainHeading } from '../styledElements/Headings.styled';
 import Paragraph from '../styledElements/Paragraphs.styled';
-import { ArrowLink } from '../styledElements/Link.styled';
-import arrow from '../../assets/shared/desktop/arrowlight.svg';
+import { ArrowLinkLight } from '../shared/ArrowLinks';
 
 const StyledHeader = styled.header`
   background: url(${bg}) center center/cover no-repeat;
@@ -40,10 +39,7 @@ const StoriesHero = () => {
             Kentucky and West Virginia, and while the ridges are not high, the
             terrain is extremely rugged.
           </Paragraph>
-          <ArrowLink light={+true} to='/Stories'>
-            <span>Read the Story</span>
-            <img src={arrow} alt='' />
-          </ArrowLink>
+          <ArrowLinkLight text='Read the Story' path='/Stories' />
         </div>
       </TwoCol>
     </StyledHeader>

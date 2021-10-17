@@ -14,29 +14,3 @@ export const StyledLink = styled(Link)`
     color: var(--lightGray);
   }
 `;
-
-export const ArrowLink = styled(Link)`
-  ${headingStyles}
-  display: inline-flex;
-  align-items: center;
-  gap: 2rem;
-  text-transform: uppercase;
-  font-size: 1.5rem;
-  color: ${({ light }) => (light ? 'var(--white)' : 'var(--black)')};
-
-  img {
-    width: 5rem;
-    transition: var(--mainTransition);
-  }
-
-  &:hover,
-  &:focus {
-    span {
-      text-decoration: underline;
-    }
-
-    img {
-      margin-left: 2rem;
-    }
-  }
-`;

@@ -1,10 +1,9 @@
 import styled from 'styled-components';
 import { MainHeading } from '../styledElements/Headings.styled';
 import Paragraph from '../styledElements/Paragraphs.styled';
-import { ArrowLink } from '../styledElements/Link.styled';
-import { maxWidthLg } from '../../abstracts/Mixins';
 import { TwoCol } from '../styledElements/Containers.styled';
-import arrow from '../../assets/shared/desktop/arrowlight.svg';
+import { ArrowLinkLight } from '../shared/ArrowLinks';
+import { maxWidthLg } from '../../abstracts/Mixins';
 import showcase from '../../assets/home/desktop/create-and-share.jpg';
 
 const StyledHeader = styled.header`
@@ -33,10 +32,7 @@ const HomeHero = () => {
             We make it easy to share photos, tell stories and connect with
             others.
           </Paragraph>
-          <ArrowLink light={+true} to='/Pricing'>
-            <span>Get an invite</span>
-            <img src={arrow} alt='' />
-          </ArrowLink>
+          <ArrowLinkLight text='Get an Invite' path='/Pricing' />
         </div>
         <div className='showcase'></div>
       </TwoCol>
