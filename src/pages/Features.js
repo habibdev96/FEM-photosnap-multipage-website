@@ -1,6 +1,7 @@
 import SectionHero from '../components/shared/SectionHero';
 import bg from '../assets/features/desktop/hero.jpg';
 import FeaturesFeatureCards from '../components/features/FeaturesFeatureCards';
+import Cta from '../components/shared/Cta';
 
 const Features = () => {
   return (
@@ -12,6 +13,7 @@ const Features = () => {
       />
       <main>
         <FeaturesFeatureCards />
+        <Cta />
       </main>
     </>
   );

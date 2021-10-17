@@ -9,6 +9,10 @@ export const FlexBetween = styled.div`
   gap: var(--gap);
 `;
 
+export const FlexEvenly = styled(FlexBetween)`
+  justify-content: space-evenly;
+`;
+
 export const TwoCol = styled.div`
   display: grid;
   align-items: center;
