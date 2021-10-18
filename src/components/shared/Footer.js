@@ -53,7 +53,7 @@ const StyledFooter = styled.footer`
 `;
 
 const Footer = () => {
-  const { socials, footerLinks } = useGlobalContext();
+  const { socials, footerLinks, scrollToTop } = useGlobalContext();
 
   return (
     <StyledFooter>
@@ -74,7 +74,7 @@ const Footer = () => {
           <ul className='links'>
             {footerLinks.map((link) => (
               <li key={link.id}>
-                <StyledLink light={+true} to={link.path}>
+                <StyledLink light={+true} to={link.path} onClick={scrollToTop}>
                   {link.text}
                 </StyledLink>
               </li>

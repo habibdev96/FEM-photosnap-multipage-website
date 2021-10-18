@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { headingStyles } from '../../abstracts/Mixins';
 import arrowDark from '../../assets/shared/desktop/arrow.svg';
 import arrowLight from '../../assets/shared/desktop/arrowlight.svg';
+import { useGlobalContext } from '../../context/context';
 
 const ArrowLink = styled(Link)`
   ${headingStyles}
@@ -31,8 +32,10 @@ const ArrowLink = styled(Link)`
 `;
 
 export const ArrowLinkDark = ({ text, path }) => {
+  const { scrollToTop } = useGlobalContext();
+
   return (
-    <ArrowLink to={path}>
+    <ArrowLink to={path} onClick={scrollToTop}>
       <span>{text}</span>
       <img src={arrowDark} alt='' />
     </ArrowLink>
@@ -40,8 +43,10 @@ export const ArrowLinkDark = ({ text, path }) => {
 };
 
 export const ArrowLinkLight = ({ text, path }) => {
+  const { scrollToTop } = useGlobalContext();
+
   return (
-    <ArrowLink light={+true} to={path}>
+    <ArrowLink light={+true} to={path} onClick={scrollToTop}>
       <span>{text}</span>
       <img src={arrowLight} alt='' />
     </ArrowLink>

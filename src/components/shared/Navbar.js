@@ -25,22 +25,24 @@ const StyledNav = styled.nav`
 `;
 
 const Navbar = () => {
-  const { links } = useGlobalContext();
+  const { links, scrollToTop } = useGlobalContext();
 
   return (
     <StyledNav>
       <FlexBetween>
-        <Link to='/'>
+        <Link to='/' onClick={scrollToTop}>
           <img src={logo} alt='photosnap logo' className='logo' />
         </Link>
         <ul className='links'>
           {links.map((link) => (
             <li key={link.id}>
-              <StyledLink to={link.path}>{link.text}</StyledLink>
+              <StyledLink to={link.path} onClick={scrollToTop}>
+                {link.text}
+              </StyledLink>
             </li>
           ))}
         </ul>
-        <Button to='/Pricing' primary={+true}>
+        <Button to='/Pricing' primary={+true} onClick={scrollToTop}>
           Get an invite
         </Button>
       </FlexBetween>
