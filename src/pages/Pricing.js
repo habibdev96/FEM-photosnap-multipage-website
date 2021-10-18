@@ -1,6 +1,7 @@
 import SectionHero from '../components/shared/SectionHero';
 import bg from '../assets/pricing/desktop/hero.jpg';
 import Cta from '../components/shared/Cta';
+import PricingCards from '../components/pricing/PricingCards';
 
 const Pricing = () => {
   return (
@@ -11,6 +12,7 @@ const Pricing = () => {
         bg={bg}
       />
       <main>
+        <PricingCards />
         <Cta />
       </main>
     </>

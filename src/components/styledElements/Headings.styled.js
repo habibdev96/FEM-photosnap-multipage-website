@@ -10,7 +10,7 @@ export const MainHeading = styled.h1`
 
 export const CardHeading = styled.h3`
   ${headingStyles}
-  font-size: 1.8rem;
+  font-size: 2.4rem;
   color: ${({ light }) => (light ? 'var(--white)' : 'var(--black)')};
 `;
 

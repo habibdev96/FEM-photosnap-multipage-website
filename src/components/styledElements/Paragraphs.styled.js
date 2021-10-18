@@ -16,6 +16,7 @@ const Paragraph = styled.p`
     `}
 
   ${({ white }) => white && 'color: var(--white)'}
+  ${({ lightpadding }) => lightpadding && 'padding: 1rem 0'}
 `;
 
 export default Paragraph;

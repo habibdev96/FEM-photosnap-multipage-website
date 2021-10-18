@@ -6,6 +6,7 @@ const Globals = createGlobalStyle`
     --white: hsl(0, 0%, 100%);
     --black: hsl(0, 0%, 0%);
     --lightGray: hsl(0, 0%, 67%);
+    --lighterGray: hsl(0, 0%, 90%);
 
     /* gradient */
     --gradientOne: hsl(28, 100%, 79%);
