@@ -6,6 +6,7 @@ import {
   socialsData,
   footerLinksData,
   pricingCardsData,
+  compareFeaturesData,
 } from './data';
 
 const AppContext = React.createContext();
@@ -18,6 +19,7 @@ export const AppProvider = ({ children }) => {
   const [footerLinks, setFooterLinks] = useState(footerLinksData);
   const [priceCards, setPriceCards] = useState(pricingCardsData);
   const [showYearlyPrice, setShowYearlyPrice] = useState(false);
+  const [compareFeatures, setCompareFeatures] = useState(compareFeaturesData);
 
   const scrollToTop = () => window.scrollTo(0, 0);
 
@@ -33,6 +35,7 @@ export const AppProvider = ({ children }) => {
         priceCards,
         showYearlyPrice,
         setShowYearlyPrice,
+        compareFeatures,
       }}
     >
       {children}

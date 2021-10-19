@@ -307,3 +307,98 @@ export const pricingCardsData = [
     primaryCard: false,
   },
 ];
+
+export const compareFeaturesData = [
+  [
+    {
+      id: 1,
+      title: 'The Features',
+    },
+    {
+      id: 2,
+      title: 'Basic',
+    },
+    {
+      id: 3,
+      title: 'Pro',
+    },
+    {
+      id: 4,
+      title: 'Business',
+    },
+  ],
+  [
+    {
+      id: 1,
+      feature: 'Unlimited Story Posting',
+      plans: {
+        basic: true,
+        pro: true,
+        business: true,
+      },
+    },
+    {
+      id: 2,
+      feature: 'Unlimited Photo Upload',
+      plans: {
+        basic: true,
+        pro: true,
+        business: true,
+      },
+    },
+    {
+      id: 3,
+      feature: 'Embedding Custom Content',
+      plans: {
+        basic: false,
+        pro: true,
+        business: true,
+      },
+    },
+    {
+      id: 4,
+      feature: 'Customize Metadata',
+      plans: {
+        basic: false,
+        pro: true,
+        business: true,
+      },
+    },
+    {
+      id: 5,
+      feature: 'Advanced Metrics',
+      plans: {
+        basic: false,
+        pro: false,
+        business: true,
+      },
+    },
+    {
+      id: 6,
+      feature: 'Photo Downloads',
+      plans: {
+        basic: false,
+        pro: false,
+        business: true,
+      },
+    },
+    {
+      id: 7,
+      feature: 'Search Engine Indexing',
+      plans: {
+        basic: false,
+        pro: false,
+        business: true,
+      },
+    },
+    {
+      id: 8,
+      feature: 'Custom Analytics',
+      plans: {
+        basic: false,
+        pro: false,
+        business: true,
+      },
+    },
+  ],
+];

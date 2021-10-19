@@ -2,6 +2,7 @@ import SectionHero from '../components/shared/SectionHero';
 import bg from '../assets/pricing/desktop/hero.jpg';
 import Cta from '../components/shared/Cta';
 import PricingCards from '../components/pricing/PricingCards';
+import CompareFeatures from '../components/pricing/CompareFeatures';
 
 const Pricing = () => {
   return (
@@ -13,6 +14,7 @@ const Pricing = () => {
       />
       <main>
         <PricingCards />
+        <CompareFeatures />
         <Cta />
       </main>
     </>
