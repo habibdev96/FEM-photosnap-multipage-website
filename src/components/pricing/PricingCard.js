@@ -57,7 +57,7 @@ const PricingCard = ({
         <Paragraph lightpadding light>
           per {showYearlyPrice ? 'month' : 'year'}
         </Paragraph>
-        <Button secondary className='btn' to='/Pricing'>
+        <Button secondary={+true} className='btn' to='/Pricing'>
           Pick Plan
         </Button>
       </StyledArticle>
@@ -73,7 +73,7 @@ const PricingCard = ({
         <Paragraph lightpadding>
           per {showYearlyPrice ? 'month' : 'year'}
         </Paragraph>
-        <Button primary className='btn' to='/Pricing'>
+        <Button primary={+true} className='btn' to='/Pricing'>
           Pick Plan
         </Button>
       </StyledArticle>
