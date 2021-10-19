@@ -12,8 +12,8 @@ const Toggler = styled.div`
   .switch {
     position: relative;
     display: inline-block;
-    width: 4.5rem;
-    height: 2.55rem;
+    width: 6.5rem;
+    height: 3rem;
 
     &:hover,
     &:focus {
@@ -42,21 +42,21 @@ const Toggler = styled.div`
     &:before {
       position: absolute;
       content: '';
-      height: 1.95rem;
-      width: 1.95rem;
-      left: 0.3rem;
+      height: 2.5rem;
+      width: 2.5rem;
+      left: 0.4rem;
       bottom: 0.3rem;
-      background-color: var(--black);
       border-radius: 50%;
+      background-color: var(--black);
       -webkit-transition: var(--mainTransition);
       transition: var(--mainTransition);
     }
   }
 
   .checkbox:checked + .toggle:before {
-    -webkit-transform: translateX(1.95rem);
-    -ms-transform: translateX(1.95rem);
-    transform: translateX(1.95rem);
+    -webkit-transform: translateX(2.95rem);
+    -ms-transform: translateX(2.95rem);
+    transform: translateX(2.95rem);
   }
 `;
 

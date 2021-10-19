@@ -55,7 +55,7 @@ const PricingCard = ({
           ${showYearlyPrice ? yearlyPrice : monthlyPrice}
         </MainHeading>
         <Paragraph lightpadding light>
-          per {showYearlyPrice ? 'month' : 'year'}
+          per {showYearlyPrice ? 'year' : 'month'}
         </Paragraph>
         <Button secondary={+true} className='btn' to='/Pricing'>
           Pick Plan
@@ -71,7 +71,7 @@ const PricingCard = ({
           ${showYearlyPrice ? yearlyPrice : monthlyPrice}
         </MainHeading>
         <Paragraph lightpadding>
-          per {showYearlyPrice ? 'month' : 'year'}
+          per {showYearlyPrice ? 'year' : 'month'}
         </Paragraph>
         <Button primary={+true} className='btn' to='/Pricing'>
           Pick Plan
