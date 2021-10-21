@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { MainHeading, CardHeading } from '../styledElements/Headings.styled';
 import Paragraph from '../styledElements/Paragraphs.styled';
 import { Button } from '../styledElements/Buttons.styled';
+import Responsive from '../../abstracts/Responsive';
 import { useGlobalContext } from '../../context/context';
 
 const StyledArticle = styled.article`
@@ -14,6 +15,10 @@ const StyledArticle = styled.article`
     position: relative;
     background-color: var(--black);
     transform: scale(1.1);
+
+    ${Responsive.lg`
+      transform: scale(1);
+    `}
 
     &:after {
       content: '';

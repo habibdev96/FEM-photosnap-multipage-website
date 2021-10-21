@@ -4,6 +4,7 @@ import logo from '../../assets/shared/desktop/logo.svg';
 import { StyledLink } from '../styledElements/Link.styled';
 import { Button } from '../styledElements/Buttons.styled';
 import { Link } from 'react-router-dom';
+import Responsive from '../../abstracts/Responsive';
 import { useGlobalContext } from '../../context/context';
 
 const StyledNav = styled.nav`
@@ -15,12 +16,26 @@ const StyledNav = styled.nav`
 
   .logo {
     width: 20rem;
+
+    ${Responsive.md`
+      width: 15rem;
+    `}
   }
 
   .links {
     display: flex;
     align-items: center;
     gap: var(--gap);
+
+    ${Responsive.md`
+      display: none;
+    `}
+  }
+
+  .btn {
+    ${Responsive.md`
+      display: none;
+    `}
   }
 `;
 
@@ -42,7 +57,12 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-        <Button to='/Pricing' primary={+true} onClick={scrollToTop}>
+        <Button
+          to='/Pricing'
+          primary={+true}
+          onClick={scrollToTop}
+          className='btn'
+        >
           Get an invite
         </Button>
       </FlexBetween>

@@ -5,16 +5,28 @@ import { StyledLink } from '../styledElements/Link.styled';
 import { ArrowLinkLight } from './ArrowLinks';
 import Paragraph from '../styledElements/Paragraphs.styled';
 import Tag from './Tag';
+import Responsive from '../../abstracts/Responsive';
 import { useGlobalContext } from '../../context/context';
 
 const StyledFooter = styled.footer`
   padding: 5rem 2rem 1rem 2rem;
   background-color: var(--black);
 
+  ${Responsive.sm`
+    .container {
+      flex-direction: column;
+    }
+  `}
+
   .left {
     display: flex;
     align-items: center;
     gap: var(--gap);
+
+    ${Responsive.sm`
+      flex-direction: column;
+      text-align: center;
+    `}
 
     & > div {
       display: flex;
@@ -43,12 +55,22 @@ const StyledFooter = styled.footer`
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+
+    ${Responsive.sm`
+      gap: 4rem;
+    `}
   }
 
   .right {
     display: flex;
     flex-direction: column;
     gap: var(--gap);
+
+    & > div {
+      ${Responsive.sm`
+        display: none;
+      `}
+    }
   }
 `;
 
@@ -57,7 +79,7 @@ const Footer = () => {
 
   return (
     <StyledFooter>
-      <FlexBetween>
+      <FlexBetween className='container'>
         <div className='left'>
           <div>
             <img src={logo} alt='' className='logo' />
@@ -82,7 +104,9 @@ const Footer = () => {
           </ul>
         </div>
         <div className='right'>
-          <ArrowLinkLight text='Get an Invite' path='/Pricing' />
+          <div>
+            <ArrowLinkLight text='Get an Invite' path='/Pricing' />
+          </div>
           <Paragraph light>Copyright 2021. All Rights Reserved.</Paragraph>
         </div>
       </FlexBetween>

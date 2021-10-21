@@ -3,6 +3,7 @@ import { MainHeading } from '../styledElements/Headings.styled';
 import Paragraph from '../styledElements/Paragraphs.styled';
 import { maxWidthLg } from '../../abstracts/Mixins';
 import { TwoCol } from '../styledElements/Containers.styled';
+import Responsive from '../../abstracts/Responsive';
 
 const StyledHeader = styled.header`
   position: relative;
@@ -23,11 +24,21 @@ const StyledHeader = styled.header`
   .info {
     ${maxWidthLg}
     padding: 5rem 10rem;
+
+    ${Responsive.md`
+      height: auto;
+      padding: 5rem 5rem 10rem 5rem;
+    `}
   }
 
   .showcase {
     height: 80vh;
     width: 100%;
+
+    ${Responsive.md`
+    height: 50vh;
+    order: -1;
+    `}
   }
 `;
 

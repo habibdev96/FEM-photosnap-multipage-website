@@ -5,6 +5,7 @@ import { TwoCol } from '../styledElements/Containers.styled';
 import { SubHeading, MainHeading } from '../styledElements/Headings.styled';
 import Paragraph from '../styledElements/Paragraphs.styled';
 import { ArrowLinkLight } from '../shared/ArrowLinks';
+import Responsive from '../../abstracts/Responsive';
 
 const StyledHeader = styled.header`
   background: url(${bg}) center center/cover no-repeat;
@@ -12,7 +13,11 @@ const StyledHeader = styled.header`
 
   .info {
     ${maxWidthLg}
-    padding: 20rem 10rem;
+    padding: 15rem 10rem;
+
+    ${Responsive.xxl`
+      padding: 15rem 2rem;
+    `}
   }
 
   .article-info {

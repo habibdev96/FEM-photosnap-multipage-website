@@ -16,7 +16,7 @@ const PricingCards = () => {
   return (
     <StyledSection data-aos='fade-in'>
       <PricingToggle />
-      <ThreeCol>
+      <ThreeCol cards>
         {priceCards.map((card) => (
           <PricingCard key={card.id} {...card} />
         ))}

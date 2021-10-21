@@ -9,7 +9,7 @@ import Pricing from './pages/Pricing';
 import Navbar from './components/shared/Navbar';
 import Footer from './components/shared/Footer';
 
-// TODO: add aos.js | make responsive | mobile menu
+// TODO: make responsive | mobile menu
 
 const App = () => {
   AOS.init({ offset: 100, duration: 1000, once: true });

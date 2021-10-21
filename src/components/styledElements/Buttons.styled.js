@@ -8,6 +8,7 @@ export const Button = styled(Link)`
   font-size: 1.5rem;
   text-transform: uppercase;
   padding: 1.5rem 2rem;
+  text-align: center;
   transition: var(--mainTransition);
 
   ${({ primary }) =>

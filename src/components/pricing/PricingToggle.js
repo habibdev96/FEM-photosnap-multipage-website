@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { CardHeading } from '../styledElements/Headings.styled';
+import Responsive from '../../abstracts/Responsive';
 import { useGlobalContext } from '../../context/context';
 
 const Toggler = styled.div`
@@ -8,6 +9,10 @@ const Toggler = styled.div`
   align-items: center;
   justify-content: center;
   gap: 3rem;
+
+  ${Responsive.xxs`
+    gap: 1rem;
+  `}
 
   .switch {
     position: relative;
