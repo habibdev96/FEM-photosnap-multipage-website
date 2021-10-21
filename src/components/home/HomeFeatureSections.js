@@ -31,7 +31,7 @@ export const HomeFeatureSectionOne = () => {
     <StyledSection>
       <TwoCol invert>
         <div className='showcase'></div>
-        <div className='info'>
+        <div className='info' data-aos='fade-in'>
           <MainHeading>Beautiful stories every time</MainHeading>
           <Paragraph>
             We provide design templates to ensure your stories look terrific.
@@ -49,7 +49,7 @@ export const HomeFeatureSectionTwo = () => {
   return (
     <StyledSection>
       <TwoCol>
-        <div className='info'>
+        <div className='info' data-aos='fade-in'>
           <MainHeading>Designed for everyone</MainHeading>
           <Paragraph>
             Photosnap can help you create stories that resonate with your

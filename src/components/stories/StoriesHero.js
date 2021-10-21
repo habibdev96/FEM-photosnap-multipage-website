@@ -26,7 +26,7 @@ const StoriesHero = () => {
   return (
     <StyledHeader>
       <TwoCol>
-        <div className='info'>
+        <div className='info' data-aos='fade-in'>
           <SubHeading light>Last month's featured story</SubHeading>
           <MainHeading light>Hazy full moon of Appalachia</MainHeading>
           <div className='article-info'>

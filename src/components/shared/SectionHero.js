@@ -36,7 +36,7 @@ const SectionHero = ({ title, description, bg }) => {
     <StyledHeader>
       <div className='gradient'></div>
       <TwoCol>
-        <div className='info'>
+        <div className='info' data-aos='fade-in'>
           <MainHeading light>{title}</MainHeading>
           <Paragraph light>{description}</Paragraph>
         </div>

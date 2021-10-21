@@ -36,8 +36,15 @@ const Toggler = styled.div`
     bottom: 0;
     border-radius: 2.55rem;
     background-color: var(--lighterGray);
-    -webkit-transition: var(--mainTransition);
     transition: var(--mainTransition);
+
+    &.active {
+      background-color: var(--black);
+
+      &:before {
+        background-color: var(--white);
+      }
+    }
 
     &:before {
       position: absolute;
@@ -48,14 +55,11 @@ const Toggler = styled.div`
       bottom: 0.3rem;
       border-radius: 50%;
       background-color: var(--black);
-      -webkit-transition: var(--mainTransition);
       transition: var(--mainTransition);
     }
   }
 
   .checkbox:checked + .toggle:before {
-    -webkit-transform: translateX(2.95rem);
-    -ms-transform: translateX(2.95rem);
     transform: translateX(2.95rem);
   }
 `;
@@ -72,7 +76,7 @@ const PricingToggle = () => {
           className='checkbox'
           onClick={() => setShowYearlyPrice(!showYearlyPrice)}
         />
-        <span className='toggle'></span>
+        <span className={`toggle ${showYearlyPrice && 'active'}`}></span>
       </label>
       <CardHeading>Annually</CardHeading>
     </Toggler>

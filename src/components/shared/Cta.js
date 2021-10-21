@@ -13,7 +13,7 @@ const StyledSection = styled.section`
 const Cta = () => {
   return (
     <StyledSection>
-      <FlexEvenly>
+      <FlexEvenly data-aos='fade-in'>
         <MainHeading light>
           We're in Beta. <br />
           Get your invite today!

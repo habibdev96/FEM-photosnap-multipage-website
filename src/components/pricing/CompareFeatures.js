@@ -48,7 +48,7 @@ const CompareFeatures = () => {
   const { compareFeatures } = useGlobalContext();
 
   return (
-    <StyledSection>
+    <StyledSection data-aos='fade-in'>
       <MainHeading className='heading'>Compare</MainHeading>
       <table>
         <tr>

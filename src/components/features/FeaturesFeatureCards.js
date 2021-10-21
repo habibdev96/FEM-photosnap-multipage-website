@@ -14,7 +14,7 @@ const FeaturesFeatureCards = () => {
 
   return (
     <StyledSection>
-      <ThreeCol>
+      <ThreeCol data-aos='fade-in'>
         {featureCards[0].map((card) => (
           <FeatureCard key={card.id} {...card} />
         ))}

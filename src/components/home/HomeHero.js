@@ -25,7 +25,7 @@ const HomeHero = () => {
   return (
     <StyledHeader>
       <TwoCol>
-        <div className='info'>
+        <div className='info' data-aos='fade-in'>
           <MainHeading light>Create and share your photo Stories</MainHeading>
           <Paragraph light>
             Photosnap is a platform for photographers and visual storytellers.

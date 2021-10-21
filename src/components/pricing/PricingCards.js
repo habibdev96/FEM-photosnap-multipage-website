@@ -14,7 +14,7 @@ const PricingCards = () => {
   const { priceCards } = useGlobalContext();
 
   return (
-    <StyledSection>
+    <StyledSection data-aos='fade-in'>
       <PricingToggle />
       <ThreeCol>
         {priceCards.map((card) => (

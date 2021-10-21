@@ -56,7 +56,7 @@ const StoryCard = ({ date, title, author, bg }) => {
           background: `linear-gradient(hsla(0, 0%, 0%, 0.1), rgba(0, 0, 0, 0.7)) ,url(${bg}) center center/cover no-repeat`,
         }}
       >
-        <div className='content'>
+        <div className='content' data-aos='fade-in'>
           <Paragraph card>{date}</Paragraph>
           <CardHeading light>{title}</CardHeading>
           <Paragraph card>by {author}</Paragraph>

@@ -35,7 +35,7 @@ export const ArrowLinkDark = ({ text, path }) => {
   const { scrollToTop } = useGlobalContext();
 
   return (
-    <ArrowLink to={path} onClick={scrollToTop}>
+    <ArrowLink to={path} onClick={scrollToTop} data-aos='fade-in'>
       <span>{text}</span>
       <img src={arrowDark} alt='' />
     </ArrowLink>
@@ -46,7 +46,7 @@ export const ArrowLinkLight = ({ text, path }) => {
   const { scrollToTop } = useGlobalContext();
 
   return (
-    <ArrowLink light={+true} to={path} onClick={scrollToTop}>
+    <ArrowLink light={+true} to={path} onClick={scrollToTop} data-aos='fade-in'>
       <span>{text}</span>
       <img src={arrowLight} alt='' />
     </ArrowLink>
