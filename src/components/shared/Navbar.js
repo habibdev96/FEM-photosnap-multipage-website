@@ -4,6 +4,7 @@ import logo from '../../assets/shared/desktop/logo.svg';
 import { StyledLink } from '../styledElements/Link.styled';
 import { Button } from '../styledElements/Buttons.styled';
 import { Link } from 'react-router-dom';
+import MobileMenuToggler from './MobileMenuToggler';
 import Responsive from '../../abstracts/Responsive';
 import { useGlobalContext } from '../../context/context';
 
@@ -65,6 +66,7 @@ const Navbar = () => {
         >
           Get an invite
         </Button>
+        <MobileMenuToggler />
       </FlexBetween>
     </StyledNav>
   );

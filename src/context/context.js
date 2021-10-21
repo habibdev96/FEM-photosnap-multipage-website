@@ -20,6 +20,7 @@ export const AppProvider = ({ children }) => {
   const [priceCards, setPriceCards] = useState(pricingCardsData);
   const [showYearlyPrice, setShowYearlyPrice] = useState(false);
   const [compareFeatures, setCompareFeatures] = useState(compareFeaturesData);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const scrollToTop = () => window.scrollTo(0, 0);
 
@@ -36,6 +37,8 @@ export const AppProvider = ({ children }) => {
         showYearlyPrice,
         setShowYearlyPrice,
         compareFeatures,
+        isMobileMenuOpen,
+        setIsMobileMenuOpen,
       }}
     >
       {children}
