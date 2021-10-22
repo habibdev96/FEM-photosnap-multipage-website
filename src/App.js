@@ -10,8 +10,6 @@ import Navbar from './components/shared/Navbar';
 import MobileMenu from './components/shared/MobileMenu';
 import Footer from './components/shared/Footer';
 
-// TODO: mobile menu
-
 const App = () => {
   AOS.init({ offset: 100, duration: 1000, once: true });
 
