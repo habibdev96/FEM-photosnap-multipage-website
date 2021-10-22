@@ -41,12 +41,17 @@ const StyledNav = styled.nav`
 `;
 
 const Navbar = () => {
-  const { links, scrollToTop } = useGlobalContext();
+  const { links, scrollToTop, setIsMobileMenuOpen } = useGlobalContext();
+
+  const handleClick = () => {
+    scrollToTop();
+    setIsMobileMenuOpen(false);
+  };
 
   return (
     <StyledNav>
       <FlexBetween>
-        <Link to='/' onClick={scrollToTop}>
+        <Link to='/' onClick={handleClick}>
           <img src={logo} alt='photosnap logo' className='logo' />
         </Link>
         <ul className='links'>
