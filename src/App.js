@@ -7,6 +7,7 @@ import Stories from './pages/Stories';
 import Features from './pages/Features';
 import Pricing from './pages/Pricing';
 import Navbar from './components/shared/Navbar';
+import MobileMenu from './components/shared/MobileMenu';
 import Footer from './components/shared/Footer';
 
 // TODO: mobile menu
@@ -19,6 +20,7 @@ const App = () => {
       <Globals />
       <Router>
         <Navbar />
+        <MobileMenu />
         <Switch>
           <Route exact path='/' component={Home} />
           <Route exact path='/Stories' component={Stories} />
